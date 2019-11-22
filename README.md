@@ -17,7 +17,7 @@ The protocol for the telemetry is described here:
 
 First clone the repo:
 
-        git clone https://github.com/sm3ulc/hab-wspr
+    git clone https://github.com/reganhimself/hab-wspr
 
 The package requires some extra modules that need to be installed via pip or similar
 
@@ -27,7 +27,7 @@ The package requires some extra modules that need to be installed via pip or sim
 
 Edit balloon.ini and add aprs-is user etc. Add balloons on the format:
 
-     [ habhub name, ham callsign for the balloon , band in mhz, channel ]
+    [ habhub name, ham callsign for the balloon , band in mhz, channel ]
 
 Uploads to APRS-IS is done by adding the SSID "-12" to the default balloon-callsign.
 

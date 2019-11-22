@@ -13,6 +13,8 @@ import requests
 import sqlite3
 import sys
 import time
+import hashlib
+
 
 import maidenhead
 
@@ -399,7 +401,7 @@ def send_tlm_to_habitat(sentence, callsign, spot_time):
     h = httplib2.Http("")
 
     resp, content = h.request(
-        uri="http://habitat.habhub.org:/habitat/_design/payload_telemetry/_update/add_listener/%s" % sha256(sentence2).hexdigest(),
+        uri="http://habitat.habhub.org:/habitat/_design/payload_telemetry/_update/add_listener/%s" % hashlib.sha256(sentence2).hexdigest(),
         method='PUT',
         headers={'Content-Type': 'application/json; charset=UTF-8'},
         body=json.dumps(data),
