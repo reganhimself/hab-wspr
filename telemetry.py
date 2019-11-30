@@ -596,7 +596,7 @@ def process_telemetry(spots, balloons, habhub_callsign, push_habhub, push_aprs):
     #                        print(telemetry)
 
                             # seqnr = int(((int(telemetry['time'].strftime('%s'))) / 120) % 100000)
-                            seqnr = int(telemetry['time'].strftime('%s'))
+                            seqnr = int(telemetry['time'].strftime('%S'))
 #                            print(seqnr)
 
                             # telemetry = [ spot_pos_time, spot_pos_call, lat, lon, loc, alt, temp, batt, speed, gps, sats ]

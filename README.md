@@ -22,6 +22,11 @@ First clone the repo:
 The package requires some extra modules that need to be installed via pip or similar
 
     apt install python-httplib2 python-requests python3-bs4
+	
+For windows users install anaconda with python 3.
+
+	pip install httplib2
+	pip install bs4
     
 # Configuration
 
@@ -32,9 +37,13 @@ Edit balloon.ini and add aprs-is user etc. Add balloons on the format:
 Uploads to APRS-IS is done by adding the SSID "-12" to the default balloon-callsign.
 
 
-To run:
+To run on on linux:
 
 	python3 webscrape.py
+	
+To run on on linux:
+
+	python webscrape.py
 
 
 The scripts work with a database in sqlite. It can be used to do all kinds of output/export like checking the last sent spots:

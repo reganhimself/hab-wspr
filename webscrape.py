@@ -252,7 +252,7 @@ while 1==1:
     spotcache = spotcache[:cache_max]
 
 
-    sleeping = sleeptime - int(datetime.datetime.now().strftime('%s')) % sleeptime
+    sleeping = sleeptime - int(datetime.datetime.now().strftime('%S')) % sleeptime
 #     print("Sleep:", sleeping)
     time.sleep(sleeping)
 
