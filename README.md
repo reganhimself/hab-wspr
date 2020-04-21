@@ -50,3 +50,8 @@ The scripts work with a database in sqlite. It can be used to do all kinds of ou
 
     sqlite3 wsprdb.db 'select * from sentspots order by time_sent desc limit 30'
 
+# Support Me
+
+If you found this script useful, why not buy me a coffee! 
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O4O01FC9U)
